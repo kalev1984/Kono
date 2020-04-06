@@ -1,3 +1,4 @@
-import drawCanvas from './board/gameBoard';
+import { moveGamePiece } from './board/mouse';
 
-drawCanvas();
+let canvas = document.getElementById("container");
+canvas.addEventListener("click", moveGamePiece);
